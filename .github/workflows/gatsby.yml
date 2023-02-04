@@ -76,7 +76,7 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Gatsby
         env:
-          PREFIX_PATHS: 'true'
+          PREFIX_PATHS: "true"
         run: ${{ steps.detect-package-manager.outputs.manager }} run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
@@ -93,4 +93,9 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        # uses: actions/deploy-pages@v1
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          publish_dir: ./public
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          cname: jugsaw.co
