@@ -1,0 +1,58 @@
+[
+    {
+        "functionRoute": "defipulse",
+        "pluginName": "default-site-plugin",
+        "originalAbsoluteFilePath": "/home/runner/work/jugsaw-website/jugsaw-website/src/api/defipulse.ts",
+        "originalRelativeFilePath": "defipulse.ts",
+        "relativeCompiledFilePath": "defipulse.js",
+        "absoluteCompiledFilePath": "/home/runner/work/jugsaw-website/jugsaw-website/.cache/functions/defipulse.js"
+    },
+    {
+        "functionRoute": "etherscan",
+        "pluginName": "default-site-plugin",
+        "originalAbsoluteFilePath": "/home/runner/work/jugsaw-website/jugsaw-website/src/api/etherscan.ts",
+        "originalRelativeFilePath": "etherscan.ts",
+        "relativeCompiledFilePath": "etherscan.js",
+        "absoluteCompiledFilePath": "/home/runner/work/jugsaw-website/jugsaw-website/.cache/functions/etherscan.js"
+    },
+    {
+        "functionRoute": "etherscanBlock",
+        "pluginName": "default-site-plugin",
+        "originalAbsoluteFilePath": "/home/runner/work/jugsaw-website/jugsaw-website/src/api/etherscanBlock.ts",
+        "originalRelativeFilePath": "etherscanBlock.ts",
+        "relativeCompiledFilePath": "etherscanBlock.js",
+        "absoluteCompiledFilePath": "/home/runner/work/jugsaw-website/jugsaw-website/.cache/functions/etherscanBlock.js"
+    },
+    {
+        "functionRoute": "l2beat",
+        "pluginName": "default-site-plugin",
+        "originalAbsoluteFilePath": "/home/runner/work/jugsaw-website/jugsaw-website/src/api/l2beat.ts",
+        "originalRelativeFilePath": "l2beat.ts",
+        "relativeCompiledFilePath": "l2beat.js",
+        "absoluteCompiledFilePath": "/home/runner/work/jugsaw-website/jugsaw-website/.cache/functions/l2beat.js"
+    },
+    {
+        "functionRoute": "roadmap",
+        "pluginName": "default-site-plugin",
+        "originalAbsoluteFilePath": "/home/runner/work/jugsaw-website/jugsaw-website/src/api/roadmap.ts",
+        "originalRelativeFilePath": "roadmap.ts",
+        "relativeCompiledFilePath": "roadmap.js",
+        "absoluteCompiledFilePath": "/home/runner/work/jugsaw-website/jugsaw-website/.cache/functions/roadmap.js"
+    },
+    {
+        "functionRoute": "translations",
+        "pluginName": "default-site-plugin",
+        "originalAbsoluteFilePath": "/home/runner/work/jugsaw-website/jugsaw-website/src/api/translations.ts",
+        "originalRelativeFilePath": "translations.ts",
+        "relativeCompiledFilePath": "translations.js",
+        "absoluteCompiledFilePath": "/home/runner/work/jugsaw-website/jugsaw-website/.cache/functions/translations.js"
+    },
+    {
+        "functionRoute": "txs",
+        "pluginName": "default-site-plugin",
+        "originalAbsoluteFilePath": "/home/runner/work/jugsaw-website/jugsaw-website/src/api/txs.ts",
+        "originalRelativeFilePath": "txs.ts",
+        "relativeCompiledFilePath": "txs.js",
+        "absoluteCompiledFilePath": "/home/runner/work/jugsaw-website/jugsaw-website/.cache/functions/txs.js"
+    }
+]
