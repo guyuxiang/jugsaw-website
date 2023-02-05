@@ -13,10 +13,23 @@ on:
   workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+# permissions:
+#   contents: read
+#   pages: write
+#   id-token: write
+
+#   Actions: write
+#   Checks: write
+#   Contents: write
+#   Deployments: write
+#   Discussions: write
+#   Issues: write
+#   Metadata: read
+#   Packages: write
+#   PullRequests: write
+#   RepositoryProjects: write
+#   SecurityEvents: write
+#   Statuses: write
 
 # Allow one concurrent deployment
 concurrency:
