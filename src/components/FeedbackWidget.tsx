@@ -140,164 +140,164 @@ const FeedbackWidget: React.FC<FeedbackWidgetProps> = ({ location = "" }) => {
 
   useKeyPress(`Escape`, handleClose)
 
-  if (intl.locale !== "en") return null
-  const closeButtonSize = "24px"
-  return (
-    <>
-      <FixedDot
-        onClick={handleOpen}
-        bottomOffset={bottomOffset}
-        isExpanded={isExpanded}
-        id="dot"
-      >
-        <Box
-          display="flex"
-          justifyContent="space-evenly"
-          width={{ base: "3rem", lg: isExpanded ? "13.5rem" : "3rem" }}
-          position={{
-            base: "inherit",
-            lg: isExpanded ? "absolute" : "inherit",
-          }}
-        >
-          <FeedbackGlyphIcon color="white" my="11px" />
-          {isExpanded && (
-            <ScaleFade in={isExpanded} delay={0.25}>
-              <Text
-                as="div"
-                color="white"
-                fontWeight="bold"
-                noOfLines={2}
-                height="100%"
-                alignItems="center"
-                display={{ base: "none", lg: isExpanded ? "flex" : "none" }}
-              >
-                <Translation id="feedback-widget-prompt" />
-              </Text>
-            </ScaleFade>
-          )}
-        </Box>
-      </FixedDot>
-      {isOpen && (
-        <Box
-          display="block"
-          position="fixed"
-          inset={0}
-          bgColor="blackAlpha.400"
-          zIndex={1001} /* Above the nav bar */
-        >
-          <FocusTrap
-            focusTrapOptions={{
-              fallbackFocus: `#dot`,
-            }}
-          >
-            <Flex
-              id="modal"
-              ref={containerRef}
-              boxSizing="border-box"
-              w={{ base: "auto", sm: "300px" }}
-              bgColor="ednBackground"
-              border="1px"
-              borderColor="buttonColor"
-              boxShadow="tableItemBox"
-              borderRadius="base" /* 0.25rem */
-              position="fixed"
-              insetEnd={{ base: 4, sm: 8 }}
-              insetStart={{ base: 4, sm: "auto" }}
-              bottom={{ base: `${bottomOffset + 5}rem`, lg: 20 }}
-              zIndex={1002} /* Above the modal background */
-              _hover={{
-                transform: "scale(1.02)",
-                transition: "transform 0.2s ease-in-out",
-              }}
-              transition="transform 0.2s ease-in-out"
-              direction="column"
-              alignItems="center"
-              textAlign="center"
-              p={8}
-            >
-              <Button
-                variant="ghost"
-                onClick={handleClose}
-                aria-label={translateMessageId("close", intl)}
-                position="absolute"
-                insetEnd={2}
-                top={2}
-                cursor="pointer"
-                h={closeButtonSize}
-                w={closeButtonSize}
-                minW={closeButtonSize}
-                minH={closeButtonSize}
-                _hover={{
-                  transform: "scale(1.1)",
-                  transition: "transform 0.2s ease-in-out",
-                }}
-                transition="transform 0.2s ease-in-out"
-              >
-                <Icon as={MdClose} h={closeButtonSize} w={closeButtonSize} />
-              </Button>
+  // if (intl.locale !== "en") return null
+  // const closeButtonSize = "24px"
+  // return (
+  //   <>
+  //     <FixedDot
+  //       onClick={handleOpen}
+  //       bottomOffset={bottomOffset}
+  //       isExpanded={isExpanded}
+  //       id="dot"
+  //     >
+  //       <Box
+  //         display="flex"
+  //         justifyContent="space-evenly"
+  //         width={{ base: "3rem", lg: isExpanded ? "13.5rem" : "3rem" }}
+  //         position={{
+  //           base: "inherit",
+  //           lg: isExpanded ? "absolute" : "inherit",
+  //         }}
+  //       >
+  //         <FeedbackGlyphIcon color="white" my="11px" />
+  //         {isExpanded && (
+  //           <ScaleFade in={isExpanded} delay={0.25}>
+  //             <Text
+  //               as="div"
+  //               color="white"
+  //               fontWeight="bold"
+  //               noOfLines={2}
+  //               height="100%"
+  //               alignItems="center"
+  //               display={{ base: "none", lg: isExpanded ? "flex" : "none" }}
+  //             >
+  //               <Translation id="feedback-widget-prompt" />
+  //             </Text>
+  //           </ScaleFade>
+  //         )}
+  //       </Box>
+  //     </FixedDot>
+  //     {isOpen && (
+  //       <Box
+  //         display="block"
+  //         position="fixed"
+  //         inset={0}
+  //         bgColor="blackAlpha.400"
+  //         zIndex={1001} /* Above the nav bar */
+  //       >
+  //         <FocusTrap
+  //           focusTrapOptions={{
+  //             fallbackFocus: `#dot`,
+  //           }}
+  //         >
+  //           <Flex
+  //             id="modal"
+  //             ref={containerRef}
+  //             boxSizing="border-box"
+  //             w={{ base: "auto", sm: "300px" }}
+  //             bgColor="ednBackground"
+  //             border="1px"
+  //             borderColor="buttonColor"
+  //             boxShadow="tableItemBox"
+  //             borderRadius="base" /* 0.25rem */
+  //             position="fixed"
+  //             insetEnd={{ base: 4, sm: 8 }}
+  //             insetStart={{ base: 4, sm: "auto" }}
+  //             bottom={{ base: `${bottomOffset + 5}rem`, lg: 20 }}
+  //             zIndex={1002} /* Above the modal background */
+  //             _hover={{
+  //               transform: "scale(1.02)",
+  //               transition: "transform 0.2s ease-in-out",
+  //             }}
+  //             transition="transform 0.2s ease-in-out"
+  //             direction="column"
+  //             alignItems="center"
+  //             textAlign="center"
+  //             p={8}
+  //           >
+  //             <Button
+  //               variant="ghost"
+  //               onClick={handleClose}
+  //               aria-label={translateMessageId("close", intl)}
+  //               position="absolute"
+  //               insetEnd={2}
+  //               top={2}
+  //               cursor="pointer"
+  //               h={closeButtonSize}
+  //               w={closeButtonSize}
+  //               minW={closeButtonSize}
+  //               minH={closeButtonSize}
+  //               _hover={{
+  //                 transform: "scale(1.1)",
+  //                 transition: "transform 0.2s ease-in-out",
+  //               }}
+  //               transition="transform 0.2s ease-in-out"
+  //             >
+  //               <Icon as={MdClose} h={closeButtonSize} w={closeButtonSize} />
+  //             </Button>
 
-              <Text fontWeight="bold" fontSize="xl" lineHeight={6}>
-                {feedbackSubmitted ? (
-                  <Translation id="feedback-widget-thank-you-title" />
-                ) : (
-                  <Translation id="feedback-widget-prompt" />
-                )}
-              </Text>
-              {feedbackSubmitted && (
-                <Text fontWeight="normal" fontSize="md" lineHeight={5}>
-                  <Translation id="feedback-widget-thank-you-subtitle" />
-                </Text>
-              )}
-              {feedbackSubmitted && (
-                <Text
-                  fontWeight="bold"
-                  fontSize="xs"
-                  lineHeight={4}
-                  letterSpacing="wide"
-                  color="searchBorder"
-                >
-                  <Translation id="feedback-widget-thank-you-timing" />
-                </Text>
-              )}
-              <Flex flexWrap="nowrap" gap={6} width="full">
-                {feedbackSubmitted ? (
-                  <Button
-                    onClick={handleSurveyOpen}
-                    aria-label={translateMessageId(
-                      "feedback-widget-thank-you-cta",
-                      intl
-                    )}
-                    flex={1}
-                  >
-                    <Translation id="feedback-widget-thank-you-cta" />
-                  </Button>
-                ) : (
-                  <>
-                    <Button
-                      variant="solid"
-                      onClick={() => handleSubmit(true)}
-                      aria-label={translateMessageId("yes", intl)}
-                      flex={1}
-                    >
-                      <Translation id="yes" />
-                    </Button>
-                    <Button
-                      variant="solid"
-                      onClick={() => handleSubmit(false)}
-                      aria-label={translateMessageId("no", intl)}
-                      flex={1}
-                    >
-                      <Translation id="no" />
-                    </Button>
-                  </>
-                )}
-              </Flex>
-            </Flex>
-          </FocusTrap>
-        </Box>
-      )}
-    </>
-  )
+  //             <Text fontWeight="bold" fontSize="xl" lineHeight={6}>
+  //               {feedbackSubmitted ? (
+  //                 <Translation id="feedback-widget-thank-you-title" />
+  //               ) : (
+  //                 <Translation id="feedback-widget-prompt" />
+  //               )}
+  //             </Text>
+  //             {feedbackSubmitted && (
+  //               <Text fontWeight="normal" fontSize="md" lineHeight={5}>
+  //                 <Translation id="feedback-widget-thank-you-subtitle" />
+  //               </Text>
+  //             )}
+  //             {feedbackSubmitted && (
+  //               <Text
+  //                 fontWeight="bold"
+  //                 fontSize="xs"
+  //                 lineHeight={4}
+  //                 letterSpacing="wide"
+  //                 color="searchBorder"
+  //               >
+  //                 <Translation id="feedback-widget-thank-you-timing" />
+  //               </Text>
+  //             )}
+  //             <Flex flexWrap="nowrap" gap={6} width="full">
+  //               {feedbackSubmitted ? (
+  //                 <Button
+  //                   onClick={handleSurveyOpen}
+  //                   aria-label={translateMessageId(
+  //                     "feedback-widget-thank-you-cta",
+  //                     intl
+  //                   )}
+  //                   flex={1}
+  //                 >
+  //                   <Translation id="feedback-widget-thank-you-cta" />
+  //                 </Button>
+  //               ) : (
+  //                 <>
+  //                   <Button
+  //                     variant="solid"
+  //                     onClick={() => handleSubmit(true)}
+  //                     aria-label={translateMessageId("yes", intl)}
+  //                     flex={1}
+  //                   >
+  //                     <Translation id="yes" />
+  //                   </Button>
+  //                   <Button
+  //                     variant="solid"
+  //                     onClick={() => handleSubmit(false)}
+  //                     aria-label={translateMessageId("no", intl)}
+  //                     flex={1}
+  //                   >
+  //                     <Translation id="no" />
+  //                   </Button>
+  //                 </>
+  //               )}
+  //             </Flex>
+  //           </Flex>
+  //         </FocusTrap>
+  //       </Box>
+  //     )}
+  //   </>
+  // )
 }
 
 export default FeedbackWidget
