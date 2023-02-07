@@ -21,22 +21,22 @@ import Translation from "./Translation"
 const socialLinks = [
   {
     icon: FaGithub,
-    to: "https://github.com/ethereum/ethereum-org-website",
+    to: "https://github.com/Jugsaw",
     ariaLabel: "GitHub",
   },
   {
     icon: FaTwitter,
-    to: "https://twitter.com/ethdotorg",
+    to: "https://twitter.com/jugsaw_co",
     ariaLabel: "Twitter",
   },
-  {
-    icon: FaYoutube,
-    to: "https://youtube.com/channel/UCNOfzGXD_C9YMYmnefmPH0g",
-    ariaLabel: "Youtube",
-  },
+  // {
+  //   icon: FaYoutube,
+  //   to: "https://youtube.com/channel/UCNOfzGXD_C9YMYmnefmPH0g",
+  //   ariaLabel: "Youtube",
+  // },
   {
     icon: FaDiscord,
-    to: "https://discord.gg/CetY6Y4",
+    to: "https://discord.gg/ahA4je3kp7",
     ariaLabel: "Discord",
   },
 ]
@@ -60,221 +60,221 @@ const Footer: React.FC<IProps> = () => {
   const [medBp] = useToken("breakpoints", ["md"])
 
   const linkSections: Array<LinkSection> = [
-    {
-      title: "use-ethereum",
-      links: [
-        {
-          text: "find-wallet",
-          to: "/wallets/find-wallet/",
-        },
-        {
-          to: `/get-eth/`,
-          text: "get-eth",
-        },
-        {
-          to: `/dapps/`,
-          text: "decentralized-applications-dapps",
-        },
-        {
-          to: "/layer-2/",
-          text: "layer-2",
-        },
-        {
-          to: "/run-a-node/",
-          text: "run-a-node",
-        },
-        {
-          to: `/stablecoins/`,
-          text: "page-stablecoins-title",
-        },
-        {
-          to: `/staking/`,
-          text: "page-upgrades-get-involved-stake-eth",
-        },
-      ],
-    },
-    {
-      title: "learn",
-      links: [
-        {
-          to: `/what-is-ethereum/`,
-          text: "what-is-ethereum",
-        },
-        {
-          to: `/eth/`,
-          text: "what-is-ether",
-        },
-        {
-          to: `/wallets/`,
-          text: "ethereum-wallets",
-        },
-        {
-          to: `/learn/`,
-          text: "guides-and-resources",
-        },
-        {
-          to: "/history/",
-          text: "history-of-ethereum",
-        },
-        {
-          to: "/whitepaper/",
-          text: "ethereum-whitepaper",
-        },
-        {
-          text: "ethereum-upgrades",
-          to: "/upgrades/",
-        },
-        {
-          text: "ethereum-security",
-          to: "/security/",
-        },
-        {
-          to: `/glossary/`,
-          text: "ethereum-glossary",
-        },
-        {
-          text: "ethereum-governance",
-          to: "/governance/",
-        },
-        {
-          text: "bridges",
-          to: "/bridges/",
-        },
-        {
-          text: "zero-knowledge-proofs",
-          to: "/zero-knowledge-proofs/",
-        },
-        {
-          text: "energy-consumption",
-          to: "/energy-consumption/",
-        },
-        {
-          text: "web3",
-          to: "/web3/",
-        },
-        {
-          to: "/eips/",
-          text: "eips",
-        },
-      ],
-    },
-    {
-      title: "developers",
-      links: [
-        {
-          to: `/developers/`,
-          text: "get-started",
-          isPartiallyActive: false,
-        },
-        {
-          to: `/developers/docs/`,
-          text: "documentation",
-        },
-        {
-          to: `/developers/tutorials/`,
-          text: "tutorials",
-        },
-        {
-          to: `/developers/learning-tools/`,
-          text: "learn-by-coding",
-        },
-        {
-          to: `/developers/local-environment/`,
-          text: "set-up-local-env",
-        },
-      ],
-    },
-    {
-      title: "ecosystem",
-      links: [
-        {
-          to: `/community/`,
-          text: "community-hub",
-        },
-        {
-          to: "/foundation/",
-          text: "ethereum-foundation",
-        },
-        {
-          to: "https://blog.ethereum.org/",
-          text: "ef-blog",
-        },
-        {
-          to: "https://esp.ethereum.foundation",
-          text: "esp",
-        },
-        {
-          to: "/bug-bounty/",
-          text: "ethereum-bug-bounty",
-        },
-        {
-          to: "/community/grants",
-          text: "grant-programs",
-        },
-        {
-          to: "/assets/",
-          text: "ethereum-brand-assets",
-        },
-        {
-          to: "https://devcon.org/",
-          text: "devcon",
-        },
-      ],
-    },
-    {
-      title: "enterprise",
-      links: [
-        {
-          to: "/enterprise/",
-          text: "mainnet-ethereum",
-        },
-        {
-          to: "/enterprise/private-ethereum/",
-          text: "private-ethereum",
-        },
-        {
-          to: "/enterprise/",
-          text: "enterprise",
-        },
-      ],
-    },
-    {
-      title: "about-ethereum-org",
-      links: [
-        {
-          to: "/about/",
-          text: "about-us",
-        },
-        {
-          to: "/about/#open-jobs",
-          text: "jobs",
-        },
-        {
-          to: "/contributing/",
-          text: "contributing",
-        },
-        {
-          to: "/languages/",
-          text: "language-support",
-        },
-        {
-          to: "/privacy-policy/",
-          text: "privacy-policy",
-        },
-        {
-          to: "/terms-of-use/",
-          text: "terms-of-use",
-        },
-        {
-          to: "/cookie-policy/",
-          text: "cookie-policy",
-        },
-        {
-          to: "mailto:press@ethereum.org",
-          text: "contact",
-        },
-      ],
-    },
+    // {
+    //   title: "use-ethereum",
+    //   links: [
+    //     {
+    //       text: "find-wallet",
+    //       to: "/wallets/find-wallet/",
+    //     },
+    //     {
+    //       to: `/get-eth/`,
+    //       text: "get-eth",
+    //     },
+    //     {
+    //       to: `/dapps/`,
+    //       text: "decentralized-applications-dapps",
+    //     },
+    //     {
+    //       to: "/layer-2/",
+    //       text: "layer-2",
+    //     },
+    //     {
+    //       to: "/run-a-node/",
+    //       text: "run-a-node",
+    //     },
+    //     {
+    //       to: `/stablecoins/`,
+    //       text: "page-stablecoins-title",
+    //     },
+    //     {
+    //       to: `/staking/`,
+    //       text: "page-upgrades-get-involved-stake-eth",
+    //     },
+    //   ],
+    // },
+    // {
+    //   title: "learn",
+    //   links: [
+    //     {
+    //       to: `/what-is-ethereum/`,
+    //       text: "what-is-ethereum",
+    //     },
+    //     {
+    //       to: `/eth/`,
+    //       text: "what-is-ether",
+    //     },
+    //     {
+    //       to: `/wallets/`,
+    //       text: "ethereum-wallets",
+    //     },
+    //     {
+    //       to: `/learn/`,
+    //       text: "guides-and-resources",
+    //     },
+    //     {
+    //       to: "/history/",
+    //       text: "history-of-ethereum",
+    //     },
+    //     {
+    //       to: "/whitepaper/",
+    //       text: "ethereum-whitepaper",
+    //     },
+    //     {
+    //       text: "ethereum-upgrades",
+    //       to: "/upgrades/",
+    //     },
+    //     {
+    //       text: "ethereum-security",
+    //       to: "/security/",
+    //     },
+    //     {
+    //       to: `/glossary/`,
+    //       text: "ethereum-glossary",
+    //     },
+    //     {
+    //       text: "ethereum-governance",
+    //       to: "/governance/",
+    //     },
+    //     {
+    //       text: "bridges",
+    //       to: "/bridges/",
+    //     },
+    //     {
+    //       text: "zero-knowledge-proofs",
+    //       to: "/zero-knowledge-proofs/",
+    //     },
+    //     {
+    //       text: "energy-consumption",
+    //       to: "/energy-consumption/",
+    //     },
+    //     {
+    //       text: "web3",
+    //       to: "/web3/",
+    //     },
+    //     {
+    //       to: "/eips/",
+    //       text: "eips",
+    //     },
+    //   ],
+    // },
+    // {
+    //   title: "developers",
+    //   links: [
+    //     {
+    //       to: `/developers/`,
+    //       text: "get-started",
+    //       isPartiallyActive: false,
+    //     },
+    //     {
+    //       to: `/developers/docs/`,
+    //       text: "documentation",
+    //     },
+    //     {
+    //       to: `/developers/tutorials/`,
+    //       text: "tutorials",
+    //     },
+    //     {
+    //       to: `/developers/learning-tools/`,
+    //       text: "learn-by-coding",
+    //     },
+    //     {
+    //       to: `/developers/local-environment/`,
+    //       text: "set-up-local-env",
+    //     },
+    //   ],
+    // },
+    // {
+    //   title: "ecosystem",
+    //   links: [
+    //     {
+    //       to: `/community/`,
+    //       text: "community-hub",
+    //     },
+    //     {
+    //       to: "/foundation/",
+    //       text: "ethereum-foundation",
+    //     },
+    //     {
+    //       to: "https://blog.ethereum.org/",
+    //       text: "ef-blog",
+    //     },
+    //     {
+    //       to: "https://esp.ethereum.foundation",
+    //       text: "esp",
+    //     },
+    //     {
+    //       to: "/bug-bounty/",
+    //       text: "ethereum-bug-bounty",
+    //     },
+    //     {
+    //       to: "/community/grants",
+    //       text: "grant-programs",
+    //     },
+    //     {
+    //       to: "/assets/",
+    //       text: "ethereum-brand-assets",
+    //     },
+    //     {
+    //       to: "https://devcon.org/",
+    //       text: "devcon",
+    //     },
+    //   ],
+    // },
+    // {
+    //   title: "enterprise",
+    //   links: [
+    //     {
+    //       to: "/enterprise/",
+    //       text: "mainnet-ethereum",
+    //     },
+    //     {
+    //       to: "/enterprise/private-ethereum/",
+    //       text: "private-ethereum",
+    //     },
+    //     {
+    //       to: "/enterprise/",
+    //       text: "enterprise",
+    //     },
+    //   ],
+    // },
+    // {
+    //   title: "about-ethereum-org",
+    //   links: [
+    //     {
+    //       to: "/about/",
+    //       text: "about-us",
+    //     },
+    //     {
+    //       to: "/about/#open-jobs",
+    //       text: "jobs",
+    //     },
+    //     {
+    //       to: "/contributing/",
+    //       text: "contributing",
+    //     },
+    //     {
+    //       to: "/languages/",
+    //       text: "language-support",
+    //     },
+    //     {
+    //       to: "/privacy-policy/",
+    //       text: "privacy-policy",
+    //     },
+    //     {
+    //       to: "/terms-of-use/",
+    //       text: "terms-of-use",
+    //     },
+    //     {
+    //       to: "/cookie-policy/",
+    //       text: "cookie-policy",
+    //     },
+    //     {
+    //       to: "mailto:press@ethereum.org",
+    //       text: "contact",
+    //     },
+    //   ],
+    // },
   ]
 
   return (

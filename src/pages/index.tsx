@@ -569,7 +569,7 @@ const HomePage = ({
         alt={translateMessageId("page-index-hero-image-alt", intl)}
         loading="eager"
       />
-      <Morpher />
+      {/* <Morpher /> */}
       <Header>
         <H1>
           <Translation id="page-index-title" />
@@ -581,7 +581,7 @@ const HomePage = ({
           <Translation id="page-index-title-button" />
         </ButtonLink>
       </Header>
-      <StyledGrayContainer>
+      {/* <StyledGrayContainer>
         <StyledContent>
           <IntroRow>
             <IntroLeftColumn>
@@ -615,7 +615,7 @@ const HomePage = ({
             ))}
           </StyledCardContainer>
         </StyledContent>
-      </StyledGrayContainer>
+      </StyledGrayContainer> */}
       <EthereumIntroContainer>
         <RowReverse>
           <FeatureContent>
@@ -723,7 +723,7 @@ const HomePage = ({
           </ImageContainer>
         </Row>
       </InternetContainer>
-      <DeveloperContainer>
+      {/* <DeveloperContainer>
         <CodeExampleContent>
           <StyledCardList
             content={codeExamples}
@@ -761,8 +761,8 @@ const HomePage = ({
             {codeExamples[activeCode].code}
           </Codeblock>
         </CodeboxModal>
-      </DeveloperContainer>
-      <StyledGrayContainer>
+      </DeveloperContainer> */}
+      {/* <StyledGrayContainer>
         <StyledContent>
           <h2>
             <Translation id="page-index-network-stats-title" />
@@ -772,13 +772,13 @@ const HomePage = ({
           </Subtitle>
         </StyledContent>
         <StatsBoxGrid />
-      </StyledGrayContainer>
-      <StyledContent>
+      </StyledGrayContainer> */}
+      {/* <StyledContent>
         <h2>
           <Translation id="page-index-touts-header" />
         </h2>
-      </StyledContent>
-      <StyledContent>
+      </StyledContent> */}
+      {/* <StyledContent>
         <StyledCardContainer>
           {touts.map((tout, idx) => {
             return (
@@ -815,7 +815,7 @@ const HomePage = ({
             </StyledButtonLink>
           </ButtonRow>
         </StyledCalloutBanner>
-      </StyledContent>
+      </StyledContent> */}
     </Page>
   )
 }

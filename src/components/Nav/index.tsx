@@ -397,10 +397,10 @@ const Nav: React.FC<IProps> = ({ path }) => {
           {/* Desktop */}
           <InnerContent>
             <LeftItems>
-              <Menu path={path} sections={linkSections} />
+              {/* <Menu path={path} sections={linkSections} /> */}
             </LeftItems>
             <RightItems>
-              <Search useKeyboardShortcut />
+              {/* <Search useKeyboardShortcut /> */}
               <IconButton
                 aria-label={
                   isDarkTheme ? "Switch to Light Theme" : "Switch to Dark Theme"
@@ -415,12 +415,12 @@ const Nav: React.FC<IProps> = ({ path }) => {
                 _hover={{ color: "primary" }}
                 onClick={toggleColorMode}
               />
-              <ButtonLink to={`/languages/${fromPageParameter}`} variant="icon">
+              {/* <ButtonLink to={`/languages/${fromPageParameter}`} variant="icon">
                 <Icon as={MdLanguage} fontSize="2xl" />
                 <Text as="span" pl={2}>
                   <Translation id="languages" />
                 </Text>
-              </ButtonLink>
+              </ButtonLink> */}
             </RightItems>
           </InnerContent>
           {/* Mobile */}

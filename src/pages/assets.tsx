@@ -8,6 +8,7 @@ import { graphql, PageProps } from "gatsby"
 
 // Assets
 import EthGlyphColoredSvg from "../assets/assets/eth-glyph-colored.svg"
+import JugsawColoredSvg from "../assets/assets/jugsaw-colored.svg"
 import MergePandaSvg from "../assets/home/merge-panda.svg"
 
 // Components
@@ -368,7 +369,7 @@ const AssetsPage = ({ data }: PageProps<Queries.AssetsPageQuery, Context>) => {
               "page-assets-eth-diamond-colored-svg",
               intl
             )}
-            svg={EthGlyphColoredSvg}
+            svg={JugsawColoredSvg}
           />
         </Row>
         <Row>
