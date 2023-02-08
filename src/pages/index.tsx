@@ -577,9 +577,9 @@ const HomePage = ({
         <Description>
           <Translation id="page-index-description" />
         </Description>
-        <ButtonLink variant="outline" to="/learn/">
+        {/* <ButtonLink variant="outline" to="/learn/">
           <Translation id="page-index-title-button" />
-        </ButtonLink>
+        </ButtonLink> */}
       </Header>
       {/* <StyledGrayContainer>
         <StyledContent>
@@ -616,7 +616,7 @@ const HomePage = ({
           </StyledCardContainer>
         </StyledContent>
       </StyledGrayContainer> */}
-      <EthereumIntroContainer>
+      {/* <EthereumIntroContainer>
         <RowReverse>
           <FeatureContent>
             <StyledH2>
@@ -722,7 +722,7 @@ const HomePage = ({
             />
           </ImageContainer>
         </Row>
-      </InternetContainer>
+      </InternetContainer> */}
       {/* <DeveloperContainer>
         <CodeExampleContent>
           <StyledCardList
